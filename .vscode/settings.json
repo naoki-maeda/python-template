@@ -1,0 +1,31 @@
+{
+  "[python]": {
+    "editor.detectIndentation": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/*.pyc": true,
+    "**/.mypy_cache/**": true,
+    "**/__pycache__": true,
+    ".nyc_output": true,
+    "bin": true,
+    "obj": true
+  },
+  "git.ignoreLimitWarning": true,
+  "python.envFile": "${workspaceFolder}/.venv",
+  "python.formatting.provider": "black",
+  "python.linting.enabled": true,
+  "python.linting.flake8Args": [
+    "--config=${workspaceFolder}/.flake8"
+  ],
+  "python.linting.flake8Enabled": true,
+  "python.linting.mypyArgs": [
+    "--config-file=${workspaceFolder}/mypy.ini"
+  ],
+  "python.linting.mypyEnabled": true
+}
