@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "python_template"
+version = "0.1.0"
+description = "Python template repository. Please change tool.poetry and python_template directory when you use it"
+authors = ["naoki-maeda"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.961"
+black = "^22.6.0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+pytest = "^7.1.2"
+pre-commit = "^2.20.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
