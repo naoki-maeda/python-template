@@ -29,13 +29,13 @@ jobs:
         run: python -m poetry install
 
       - name: Lint check with flake8
-        run: python -m flake8 --config=.flake8
+        run: python -m poetry run flake8 --config=.flake8
 
       - name: Lint check with mypy
-        run: python -m mypy --config-file=mypy.ini .
+        run: python -m poetry run mypy --config-file=mypy.ini .
 
       - name: Format check with black
-        run: python -m black --check --diff .
+        run: python -m poetry run black --check --diff .
 
       - name: Test with pytest
         run: python -m poetry run pytest
