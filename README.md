@@ -20,6 +20,8 @@ poetry run pre-commit install
 ```
 poetry run pytest
 ```
+5. Change tool.poetry and python_template directory.
+If you change the python_template directory, please also modify test_init.py.
 
 ## Dev Dependencies
 
