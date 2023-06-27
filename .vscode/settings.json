@@ -8,25 +8,20 @@
     "source.organizeImports": true
   },
   "editor.formatOnSave": true,
-  "files.exclude": {
-    "**/*.pyc": true,
-    "**/.mypy_cache/**": true,
-    "**/.pytest_cache": true,
-    "**/__pycache__": true,
-    ".nyc_output": true,
-    "bin": true,
-    "obj": true
-  },
-  "git.ignoreLimitWarning": true,
+  "explorer.excludeGitIgnore": true,
+  "python.analysis.typeCheckingMode": "basic",
   "python.envFile": "${workspaceFolder}/.venv",
+  "python.formatting.blackArgs": [],
   "python.formatting.provider": "black",
+  "python.languageServer": "Pylance",
   "python.linting.enabled": true,
-  "python.linting.flake8Args": [
-    "--config=${workspaceFolder}/.flake8"
-  ],
-  "python.linting.flake8Enabled": true,
   "python.linting.mypyArgs": [
     "--config-file=${workspaceFolder}/mypy.ini"
   ],
-  "python.linting.mypyEnabled": true
+  "python.linting.mypyEnabled": true,
+  "python.testing.pytestArgs": [
+    "src/tests"
+  ],
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false
 }

@@ -2,31 +2,22 @@
 
 Python application template.
 
-Poetry is required to use this template.
-
+Rye is required to use this template.
+https://github.com/mitsuhiko/rye
 
 ## Usage
 
-1. [Install Poetry](https://python-poetry.org/docs/#installation)
+1. [Install rye](https://rye-up.com/guide/installation/)
 2. Setup Virtual Environment And Install Dependency
 ```
-poetry install
+rye sync
 ```
 3. Setup pre-commit
 ```
-poetry run pre-commit install
+rye run pre-commit install
 ```
 4. Run Test
 ```
-poetry run pytest
+rye run test
 ```
-5. Change tool.poetry and python_template directory and modify tests directory.
-
-## Dev Dependencies
-
-- mypy
-- black
-- flake8
-- isort
-- pytest
-- pre-commit
+5. Change tool.poetry and src/python_template directory and modify tests directory.
