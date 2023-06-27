@@ -3,6 +3,7 @@
 Python application template.
 
 Rye is required to use this template.
+
 https://github.com/mitsuhiko/rye
 
 ## Usage
@@ -20,4 +21,4 @@ rye run pre-commit install
 ```
 rye run test
 ```
-5. Change tool.poetry and src/python_template directory and modify tests directory.
+5. Change pyproject.toml and src/ directory.
